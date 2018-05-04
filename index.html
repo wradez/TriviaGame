@@ -25,25 +25,23 @@
             <div class="jumbotron jumbotron-fluid text-center">
                 <div class="container">
                 <h1 class="display-4">Trivia Game</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                <p class="lead">Think you know Colorado history? Give your knowledge a test with this Colorado history trivia game! You have 20 seconds per questions. Guess the correct answer before time runs out, or WHOOPS! Click <em>Start</em> to begin</p>
+                <button type="button" id ="start" class="btn btn-danger btn-lg text-center">Danger</button>
                 </div>
             </div>
 
-            <div class="card text-center">
-                <h2>Totally Trivial Trivia</h2>
-                <h6>Time Remaining: <span id="time"></span></h6>
-                <h4 id="question">How many times can I misspell teh in a single assignment...?</h4>
-            </div>
+            <div id="game" class="d-none">
+                <div class="card text-center">
+                    <h2>Totally Trivial Trivia</h2>
+                    <h6>Time Remaining: <span id="time">20</span></h6>
+                    <h4 id="question">How many times can I misspell teh in a single assignment...?</h4>
+                </div>
 
-            <div id="answers" class="card text-center">
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                <div id="answers" class="card text-center">
+                    <div class="btn-group-vertical text-center"></div>
                 </div>
             </div>
-
+            
         </div>
 
 
